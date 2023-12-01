@@ -1,0 +1,165 @@
+body{
+    background-color:rgb(223, 220, 208);
+    height:100%;
+    margin: 0px;
+  }
+  
+  nav {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(1, 4vw);
+    align-items: center;
+
+  }
+  
+  @media screen and (max-width: 900px) {
+    nav {
+      grid-template-columns: repeat(12, 8.33vw);
+      grid-template-rows: repeat(1, 4vw);
+   }
+  }  
+  
+  .home {
+    grid-column: 10;
+    text-align:center;
+    margin-right: 2vw;
+  }
+  
+  .works {
+    grid-column: 11;
+    text-align:center;
+    margin-right: 2vw;
+  }
+
+  .about {
+    grid-column: 12/ span 2;
+    text-align:right;
+    margin-right: 2vw;
+  }
+  
+  
+  .navLinks {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2vw;
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    z-index:99;
+
+
+  }
+  
+  .navLinks:hover {
+    color: rgb(136, 120, 108);
+
+  }
+  
+  #twist {
+    color: rgb(0, 0, 0);
+  }
+
+
+  
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(26, 4.165vw);
+}
+
+.aboutme {
+    grid-column: 1/ 13;
+    grid-row: 3;
+}
+
+.aboutme img {
+  width: 100%;
+  height: auto;
+
+}
+
+.aboutmetitel {
+  grid-column: 1/ span 1;
+  grid-row: 1;
+}
+
+.aboutmetitel img {
+margin-left: 3vw;
+width: 170%;
+height: auto;
+
+}
+
+.titel {
+  grid-column: 4/9;
+  grid-row: 4;
+}
+
+.titel p{
+  color:rgb(0, 0, 0);
+  font-family: "amandine", sans-serif;
+  font-size: 4vw;
+  line-height: 3vw;
+  font-style:normal;
+  font-variant:normal; 
+  font-weight:300; 
+  margin: 0px;
+  z-index: 10;
+  text-align:left;
+}
+
+
+.introtext {
+  grid-column: 4/9;
+  grid-row: 5;
+}
+
+.introtext p{
+  color:rgb(0, 0, 0);
+  font-family: "amandine", sans-serif;
+  font-size: 2.2vw;
+  line-height: 3vw;
+  font-style:normal;
+  font-variant:normal; 
+  font-weight:300; 
+  margin: 0px;
+  margin-top: 2vw;
+  z-index: 10;
+  text-align:left;
+}
+
+
+.pfeil {
+  grid-column: 4;
+  grid-row: 9;
+}
+
+.pfeil img {
+width: 13%;
+height: auto;
+
+}
+
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(12, 8.33vw);
+  grid-template-rows: repeat(1, 4vw);
+  }
+  
+  .copyright {
+    grid-column: 1/12;
+    margin-left: 2vw;
+    margin-top:0.75vw;
+  }
+  
+  .copyright p {
+    color:rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1vw;
+    font-style:normal;
+    font-variant:normal; 
+    font-weight:400; 
+    z-index: 10;
+    text-align: left;
+  }

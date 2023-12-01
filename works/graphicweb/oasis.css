@@ -1,0 +1,202 @@
+body{
+    background-color:rgb(0, 0, 0);
+      height:100%;
+      margin: 0px;
+  }
+  
+  nav {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(1, 4vw);
+    align-items: center;
+  
+  }
+  
+  @media screen and (max-width: 900px) {
+    nav {
+      grid-template-columns: repeat(12, 8.33vw);
+      grid-template-rows: repeat(1, 4vw);
+   }
+  }  
+  
+  .home {
+    grid-column: 10;
+    text-align:center;
+    margin-right: 2vw;
+  }
+  
+  .works {
+    grid-column: 11;
+    text-align:center;
+    margin-right: 2vw;
+  }
+  
+  .about {
+    grid-column: 12/ span 2;
+    text-align:right;
+    margin-right: 2vw;
+  }
+  
+  
+  .navLinks {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2vw;
+  
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    z-index:99;
+  
+  
+  }
+  
+  .navLinks:hover {
+    color: rgb(136, 120, 108);
+  
+  }
+  
+  #twist {
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  
+  
+  
+  
+  .grid-container{
+      display:grid;
+      grid-template-columns: repeat(12, 8.33vw);
+      grid-template-rows: repeat(18, 4.165vw);
+  }
+  
+  .outline {
+    grid-column: 1/ 13;
+  
+  }
+  
+  .outline img {
+    margin-left: 1vw;
+    width: 98%;
+    height: auto;
+  }
+  
+  .arrow {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .arrow img {
+    margin-top: 1vw;
+    width: 30%;
+    height: auto;
+  
+  }
+  
+  
+  .text{
+      grid-column: 2/ span 7;
+      grid-row: 4;
+  }
+  
+  .text p{
+      color:rgb(242, 238, 234);
+      font-family: "amandine", sans-serif;
+      font-size: 5vw;
+      font-style:normal;
+      font-variant:normal; 
+      font-weight:400; 
+      margin: 0px;
+      z-index: 10;
+      font-variant-ligatures: none;
+  }
+  
+  .text h1{
+    color:rgb(242, 238, 234);
+    font-family: "amandine", sans-serif;
+    font-size: 1.8vw;
+    font-style:normal;
+    font-variant:normal; 
+    font-weight:400; 
+    margin: 0px;
+    z-index: 10;
+    font-variant-ligatures: none;
+  }
+
+  .tasks{
+    grid-column: 2/ span 8;
+    grid-row: 7;
+  }
+  
+  .tasks p{
+    margin-top: 1vw;
+    color:rgb(242, 238, 234);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3vw;
+    font-style:normal;
+    font-variant:normal; 
+    font-weight:400; 
+    z-index: 10;
+  }
+  
+
+.video {
+    grid-column: 1/8;
+    grid-row: 9;
+    margin-left: 3vw;
+}
+
+.videotwo {
+    grid-column: 8/12;
+    grid-row: 9;
+}
+
+.image {
+    grid-column: 2/7;
+    grid-row: 20;
+  }
+  
+  .image img {
+    margin-top: 1vw;
+    width: 90%;
+    height: auto;
+    border-radius: 3%;
+  }
+  
+  
+  .symbol {
+    grid-column: 12;
+    grid-row: 2;
+  }
+  
+  .symbol img {
+    margin-top: -2vw;
+    width: 60%;
+    height: auto;
+    border-radius: 4%;
+  }
+  
+  
+  
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(1, 4vw);
+    }
+    
+    .copyright {
+      grid-column: 1/12;
+      margin-left: 2vw;
+      margin-top:0.75vw;
+    }
+    
+    .copyright p {
+      color:rgb(255, 255, 255);
+      font-family: "Montserrat", sans-serif;
+      font-size: 1vw;
+      font-style:normal;
+      font-variant:normal; 
+      font-weight:400; 
+      z-index: 10;
+      text-align: left;
+    }

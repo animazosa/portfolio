@@ -1,0 +1,198 @@
+body{
+  background-color:rgb(223, 220, 208);
+    height:100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(1, 4vw);
+    align-items: center;
+
+  }
+  
+  @media screen and (max-width: 900px) {
+    nav {
+      grid-template-columns: repeat(12, 8.33vw);
+      grid-template-rows: repeat(1, 4vw);
+   }
+  }  
+  
+  .home {
+    grid-column: 10;
+    text-align:center;
+    margin-right: 2vw;
+  }
+  
+  .works {
+    grid-column: 11;
+    text-align:center;
+    margin-right: 2vw;
+  }
+
+  .about {
+    grid-column: 12/ span 2;
+    text-align:right;
+    margin-right: 2vw;
+  }
+  
+  
+  .navLinks {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2vw;
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    z-index:99;
+
+
+  }
+  
+  .navLinks:hover {
+    color: rgb(136, 120, 108);
+
+  }
+  
+  #twist {
+    color: rgb(0, 0, 0);
+  }
+
+
+
+
+
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(12, 4.165vw);
+}
+
+
+.welcome{
+    grid-column: 1 / 13;
+    grid-row: 3;
+    margin-top: 20px;
+
+}
+
+.myportfolio {
+  grid-column: 7;
+
+}
+
+.myportfolio img{
+
+  width: 110%;
+  height: auto;
+}
+
+.welcometo {
+  grid-column: 8;
+
+}
+
+.welcometo img{
+
+  width: 90%;
+  height: auto;
+}
+
+.fledermaus {
+  grid-column: 1;
+  text-align: center;
+  z-index: -1;
+}
+
+.fledermaus img{
+  margin-top: -20vw;
+  margin-left: -2vw;
+  width: 550%;
+  height: auto;
+}
+
+.blatt {
+  grid-column: 11;
+  grid-row: 6;
+  text-align: center;
+  z-index: -1;
+}
+
+.blatt img{
+  width: 200%;
+  height: auto;
+}
+
+
+
+
+
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(12, 8.33vw);
+  grid-template-rows: repeat(1, 4vw);
+  }
+  
+  .copyright {
+    grid-column: 1/12;
+    margin-left: 2vw;
+    margin-top:0.75vw;
+  }
+  
+  .copyright p {
+    color:rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1vw;
+    font-style:normal;
+    font-variant:normal; 
+    font-weight:400; 
+    z-index: 10;
+    text-align: left;
+  }
+
+
+  .welcometo, .myportfolio {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20vh;
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+
+  .welcometo {
+    right: 40vw;
+    background-position-y: 220px;
+    animation: logo-offset 10s linear infinite reverse;
+    /* background-color: rgba(255, 0, 0, 0.372); */
+    background-image: url(/images/TitleMyPortfolio.png);
+
+    background-position-x: right;
+  }
+
+  .myportfolio {
+    /* background-color: rgba(255, 255, 0, 0.372); */
+    animation: logo-offset 10s linear infinite;
+    left: 62vw;
+    background-image: url(/images/titlewelcometo.png);
+
+  }
+
+  @keyframes logo-offset {
+    from {
+     background-position-y: 0vh;
+    }
+    to {
+      background-position-y: 100vh;
+    }
+  }
+
+  .footer-container {
+    position: absolute;
+    bottom: 0;
+    /* width: 100%; */
+  }

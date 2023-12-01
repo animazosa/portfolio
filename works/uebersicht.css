@@ -1,0 +1,566 @@
+body{
+  background-color:rgb(223, 220, 208);
+  height:100%;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(12, 8.33vw);
+  grid-template-rows: repeat(1, 4vw);
+  align-items: center;
+
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(1, 4vw);
+ }
+}  
+
+.home {
+  grid-column: 10;
+  text-align:center;
+  margin-right: 2vw;
+}
+
+.works {
+  grid-column: 11;
+  text-align:center;
+  margin-right: 2vw;
+}
+
+.about {
+  grid-column: 12/ span 2;
+  text-align:right;
+  margin-right: 2vw;
+}
+
+
+.navLinks {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  z-index:99;
+
+
+}
+
+.navLinks:hover {
+  color: rgb(136, 120, 108);
+
+}
+
+#twist {
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.works-container{
+    display:grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(55, 4.165vw);
+
+}
+
+.myworks {
+    grid-column: 1/ span 1;
+    grid-row: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+
+.myworks img {
+  margin-left: 3vw;
+  /* width: 170%; */
+  height: 100vh;
+
+}
+
+.symbol {
+  grid-column: 4/ span 1;
+  grid-row: 7;
+  position: fixed;
+  bottom: 3vh;
+  left:23vh;
+}
+
+
+.symbol img {
+width: 10vh;
+}
+
+.introtext {
+  grid-column: 4/10;
+  grid-row: 2;
+}
+
+.introtext p{
+  color:rgb(0, 0, 0);
+  font-family: "amandine", sans-serif;
+  font-size: 2.2vw;
+  line-height: 3vw;
+  font-style:normal;
+  font-variant:normal; 
+  font-weight:300; 
+  margin: 0px;
+  z-index: 10;
+  text-align:left;
+}
+
+.threedee {
+    grid-column: 4/7;
+    grid-row: 5;
+}
+
+.threedee p{
+    color:rgb(0, 0, 0);
+    font-family: "amandine", sans-serif;
+    font-size: 4vw;
+    font-style:normal;
+    font-variant:normal; 
+    font-weight:400; 
+    margin: 0px;
+    z-index: 10;
+    text-align:left;
+}
+
+
+
+.transiency {
+  grid-column: 4/ span 3;
+  grid-row: 6;
+}
+
+.transiency img {
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+}
+
+.transiencyoverlay {
+  grid-column: 4/ span 3;
+  grid-row: 6;
+}
+
+.transiencyoverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.transiency .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity:0.15;
+  transition-duration: 0.2s;
+}
+
+.overlay:hover {
+  opacity: 1 !important;
+  }
+
+
+
+.glacierwater {
+  grid-column: 8/ span 3;
+  grid-row: 6;
+
+}
+
+.glacierwater img {
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+}
+
+.glacieroverlay {
+  grid-column: 8/ span 3;
+  grid-row: 6;
+}
+
+.glacieroverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.glacierwater .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity: 0.15;
+  transition-duration: 0.2s;
+}
+
+
+
+
+.upsidedown {
+  grid-column: 4/ span 6;
+  grid-row: 13;
+}
+
+.upsidedown img {
+  width: 132%;
+  height: auto;
+}
+
+.upsidedownoverlay {
+  grid-column: 4/ span 6;
+  grid-row: 6;
+}
+
+.upsidedownoverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 132%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.upsidedown .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity: 0.4;
+  transition-duration: 0.2s;
+}
+
+
+
+
+
+.webgraphic {
+  grid-column: 4/ span 6;
+  grid-row: 20;
+}
+
+.webgraphic p{
+  color:rgb(0, 0, 0);
+  font-family: "amandine", sans-serif;
+  font-size: 4vw;
+  font-style:normal;
+  font-variant:normal; 
+  font-weight:400; 
+  z-index: 10;
+  text-align:left;
+}
+
+
+
+
+.glacierwaterweb {
+  grid-column: 4/ span 3;
+  grid-row: 22;
+}
+
+.glacierwaterweb img {
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+}
+
+.glacierwaterweboverlay {
+  grid-column: 4/ span 3;
+  grid-row: 22;
+}
+
+.glacierwaterweboverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.glacierwaterweb .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity: 0.15;
+  transition-duration: 0.2s;
+}
+
+
+
+
+
+.oasis {
+  grid-column: 8/ span 3;
+  grid-row: 22;
+}
+
+.oasis img {
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+}
+
+.oasisoverlay {
+  grid-column: 8/ span 3;
+  grid-row: 22;
+}
+
+.oasisoverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.oasis .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity: 0.15;
+  transition-duration: 0.2s;
+}
+
+
+
+
+.album {
+  grid-column: 4/ span 3;
+  grid-row: 29;
+}
+
+.album img {
+  width: 130%;
+  height: auto;
+}
+
+.albumoverlay {
+  grid-column: 4/ span 3;
+  grid-row: 29;
+}
+
+.albumoverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.album .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity: 0.15;
+  transition-duration: 0.2s;
+}
+
+
+.futura {
+  grid-column: 8/ span 3;
+  grid-row: 29;
+}
+
+.futura img {
+width: 130%;
+height: auto;
+}
+
+.futuraoverlay {
+  grid-column: 8/ span 3;
+  grid-row: 29;
+}
+
+.futuraoverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.futura .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity: 0.15;
+  transition-duration: 0.2s;
+}
+
+
+
+
+.illustory {
+  grid-column: 4/ span 6;
+  grid-row: 37;
+}
+
+.illustory p{
+  color:rgb(0, 0, 0);
+  font-family: "amandine", sans-serif;
+  font-size: 4vw;
+  font-style:normal;
+  font-variant:normal; 
+  font-weight:400; 
+  z-index: 10;
+  text-align:left;
+}
+
+
+.veilsvirtue {
+  grid-column: 4/ span 3;
+  grid-row: 39;
+}
+
+.veilsvirtue img {
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+}
+
+.veilsvirtueoverlay {
+  grid-column: 4/ span 3;
+  grid-row: 39;
+}
+
+.veilsvirtueoverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.veilsvirtue .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity: 0.15;
+  transition-duration: 0.2s;
+}
+
+
+
+.roots {
+  grid-column: 8/ span 3;
+  grid-row: 39;
+}
+
+.roots img {
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+}
+
+.rootsoverlay {
+  grid-column: 8/ span 3;
+  grid-row: 39;
+}
+
+.rootsoverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 130%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.roots .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity: 0.15;
+  transition-duration: 0.2s;
+}
+
+
+.sketches {
+  grid-column: 4/ span 6;
+  grid-row: 46;
+}
+
+.sketches img {
+width: 132%;
+height: auto;
+}
+
+.sketchesoverlay {
+  grid-column: 4/ span 6;
+  grid-row: 46;;
+}
+
+.sketchesoverlay img {
+  z-index: 999;
+  margin-top: 2vw;
+  width: 132%;
+  height: auto;
+  opacity: 1;
+
+}
+
+.sketches .overlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  opacity: 0.15;
+  transition-duration: 0.2s;
+}
+
+
+
+
+
